@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		20BE044F26D42DBB0025B163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BE044E26D42DBB0025B163 /* AppDelegate.swift */; };
-		20BE045126D42DBB0025B163 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BE045026D42DBB0025B163 /* SceneDelegate.swift */; };
-		20BE045326D42DBB0025B163 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BE045226D42DBB0025B163 /* ViewController.swift */; };
-		20BE045626D42DBB0025B163 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BE045426D42DBB0025B163 /* Main.storyboard */; };
 		20BE045826D42DBC0025B163 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BE045726D42DBC0025B163 /* Assets.xcassets */; };
 		20BE045B26D42DBC0025B163 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BE045926D42DBC0025B163 /* LaunchScreen.storyboard */; };
+		20BE046826D42F9B0025B163 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BE046726D42F9B0025B163 /* AppAssembly.swift */; };
+		20BE046A26D42FF60025B163 /* BaseVIPER.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BE046926D42FF60025B163 /* BaseVIPER.swift */; };
+		20BE046F26D430070025B163 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BE046B26D430070025B163 /* RequestManager.swift */; };
+		20BE047026D430070025B163 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BE046C26D430070025B163 /* ImageManager.swift */; };
+		20BE047126D430070025B163 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BE046D26D430070025B163 /* Utils.swift */; };
+		20BE047226D430070025B163 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BE046E26D430070025B163 /* NetworkError.swift */; };
+		20BE047426D430100025B163 /* ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BE047326D430100025B163 /* ReuseIdentifier.swift */; };
+		20BE047626D4305D0025B163 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BE047526D4305D0025B163 /* ApiKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		20BE044B26D42DBB0025B163 /* MarvelUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BE044E26D42DBB0025B163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		20BE045026D42DBB0025B163 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		20BE045226D42DBB0025B163 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		20BE045526D42DBB0025B163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20BE045726D42DBC0025B163 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20BE045A26D42DBC0025B163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20BE045C26D42DBC0025B163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20BE046726D42F9B0025B163 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
+		20BE046926D42FF60025B163 /* BaseVIPER.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVIPER.swift; sourceTree = "<group>"; };
+		20BE046B26D430070025B163 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		20BE046C26D430070025B163 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		20BE046D26D430070025B163 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		20BE046E26D430070025B163 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		20BE047326D430100025B163 /* ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifier.swift; sourceTree = "<group>"; };
+		20BE047526D4305D0025B163 /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,68 @@
 		20BE044D26D42DBB0025B163 /* MarvelUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				20BE044E26D42DBB0025B163 /* AppDelegate.swift */,
-				20BE045026D42DBB0025B163 /* SceneDelegate.swift */,
-				20BE045226D42DBB0025B163 /* ViewController.swift */,
-				20BE045426D42DBB0025B163 /* Main.storyboard */,
+				20BE046226D42F050025B163 /* Core */,
+				20BE046426D42F120025B163 /* BaseVIPER */,
+				20BE046326D42F0C0025B163 /* Extensions */,
+				20BE046526D42F1C0025B163 /* Managers */,
+				20BE046626D42F2A0025B163 /* Modules */,
 				20BE045726D42DBC0025B163 /* Assets.xcassets */,
 				20BE045926D42DBC0025B163 /* LaunchScreen.storyboard */,
+				20BE044E26D42DBB0025B163 /* AppDelegate.swift */,
 				20BE045C26D42DBC0025B163 /* Info.plist */,
 			);
 			path = MarvelUIKit;
+			sourceTree = "<group>";
+		};
+		20BE046226D42F050025B163 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				20BE046726D42F9B0025B163 /* AppAssembly.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		20BE046326D42F0C0025B163 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		20BE046426D42F120025B163 /* BaseVIPER */ = {
+			isa = PBXGroup;
+			children = (
+				20BE046926D42FF60025B163 /* BaseVIPER.swift */,
+			);
+			path = BaseVIPER;
+			sourceTree = "<group>";
+		};
+		20BE046526D42F1C0025B163 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				20BE046B26D430070025B163 /* RequestManager.swift */,
+				20BE046C26D430070025B163 /* ImageManager.swift */,
+				20BE046D26D430070025B163 /* Utils.swift */,
+				20BE046E26D430070025B163 /* NetworkError.swift */,
+				20BE047326D430100025B163 /* ReuseIdentifier.swift */,
+				20BE047526D4305D0025B163 /* ApiKeys.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		20BE046626D42F2A0025B163 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				20BE047726D431930025B163 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		20BE047726D431930025B163 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +189,6 @@
 			files = (
 				20BE045B26D42DBC0025B163 /* LaunchScreen.storyboard in Resources */,
 				20BE045826D42DBC0025B163 /* Assets.xcassets in Resources */,
-				20BE045626D42DBB0025B163 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +199,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20BE045326D42DBB0025B163 /* ViewController.swift in Sources */,
+				20BE046F26D430070025B163 /* RequestManager.swift in Sources */,
+				20BE047226D430070025B163 /* NetworkError.swift in Sources */,
+				20BE046826D42F9B0025B163 /* AppAssembly.swift in Sources */,
 				20BE044F26D42DBB0025B163 /* AppDelegate.swift in Sources */,
-				20BE045126D42DBB0025B163 /* SceneDelegate.swift in Sources */,
+				20BE047626D4305D0025B163 /* ApiKeys.swift in Sources */,
+				20BE047126D430070025B163 /* Utils.swift in Sources */,
+				20BE047026D430070025B163 /* ImageManager.swift in Sources */,
+				20BE047426D430100025B163 /* ReuseIdentifier.swift in Sources */,
+				20BE046A26D42FF60025B163 /* BaseVIPER.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		20BE045426D42DBB0025B163 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				20BE045526D42DBB0025B163 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		20BE045926D42DBC0025B163 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -295,7 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Barazite.MarvelUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +373,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Barazite.MarvelUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
