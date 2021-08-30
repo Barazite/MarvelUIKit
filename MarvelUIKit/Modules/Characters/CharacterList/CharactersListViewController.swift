@@ -34,8 +34,8 @@ class CharactersListViewController: BaseViewController<CharactersListPresenterPr
 
 extension CharactersListViewController: CharactersListViewControllerProtocol {
     func reloadData(){
-            myTableView.reloadData()
-        }
+        myTableView.reloadData()
+    }
 }
 
 extension CharactersListViewController: UITableViewDelegate, UITableViewDataSource{
@@ -68,6 +68,4 @@ extension CharactersListViewController: UITableViewDelegate, UITableViewDataSour
             self.presenter?.fetchData()
         }
     }
-    
-    
 }

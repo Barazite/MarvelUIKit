@@ -3,7 +3,7 @@
 //
 
 import Foundation
-import Alamofire
+//import Alamofire
 
 protocol CharactersListInteractorProtocol {
     func fetchDataInteractor(offset: Int, success: @escaping(CharacterData?) -> (), failure: @escaping(NetworkingError?) -> ())

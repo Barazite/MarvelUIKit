@@ -1,41 +1,32 @@
 //
-//  CharacterTableViewCell.swift
+//  ComicCollectionViewCell.swift
 //  MarvelUIKit
 //
-//  Created by Adrian Sevilla Diaz on 24/8/21.
+//  Created by Adrian Sevilla Diaz on 30/8/21.
 //
 
 import UIKit
 import Kingfisher
 
-protocol CharacterTableViewCellProtocol {
-    func configCell(data: Character)
+protocol ComicCollectionViewCellProtocol {
+    func configCell(data: Comic)
 }
 
-class CharacterTableViewCell: UITableViewCell, ReuseIdentifierInterface, CharacterTableViewCellProtocol {
-    
+class ComicCollectionViewCell: UICollectionViewCell, ReuseIdentifierInterface, ComicCollectionViewCellProtocol {
     
     @IBOutlet weak var myImage: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.setupView()
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-    
-    private func setupView() {
         self.myImage.layer.cornerRadius = 10
         self.myImage.layer.borderWidth = 2
         self.myImage.layer.borderColor = UIColor.red.cgColor
     }
     
-    internal func configCell(data: Character){
-        self.nameLabel.text = data.name
+    func configCell(data: Comic) {
+        self.titleLabel.text = data.title
         let urlImage = URL(string: data.thumbnail ?? "")
         self.myImage.kf.setImage(with: ImageResource(downloadURL: urlImage!), placeholder: UIImage(systemName: "photo"), options: [.transition(.fade(1)), .cacheOriginalImage], completionHandler: nil)
     }

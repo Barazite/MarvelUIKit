@@ -37,8 +37,10 @@ struct RequestDTO{
 struct URLEndpoint {
     static let baseUrl = "https://gateway.marvel.com/v1/public/"
     static let charactersUrl = "characters"
+    static let comicsUrl = "comics"
 }
 
 struct Limit{
     static let limitCharacters = 30
+    static let limitComics = 50
 }
