@@ -17,8 +17,8 @@ class AppAssembly: AppAssemblyProtocol{
     var actualViewController: UIViewController!
     
     internal func setPrincipalViewController(in window: UIWindow){
-        self.customUI()
-        //actualViewController = SplashAssembly.splashViewController()
+        //self.customUI()
+        actualViewController = CharactersListAssembly.viewController()
         window.rootViewController = actualViewController
         window.makeKeyAndVisible()
     }

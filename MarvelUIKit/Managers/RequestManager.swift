@@ -14,7 +14,15 @@ class RequestManager: RequestManagerProtocol {
     internal func requestGeneric<T: Decodable>(requestDto: RequestDTO, entityClass: T.Type) -> AnyPublisher<T, NetworkingError>{
         
         let endpoint = requestDto.endpoint
-        let urlRequest = URLRequest(url: URL(string: endpoint)!)
+        var urlComp = URLComponents(url: URL(string: endpoint)!, resolvingAgainstBaseURL: false)
+        let ts = "\(Int(round(Date().timeIntervalSince1970)))"
+        let hash = (ts+MarvelApiKeys.privateKey+MarvelApiKeys.publicKey).md5()
+        var queryItemsArray = [URLQueryItem(name: "apikey", value: MarvelApiKeys.publicKey), URLQueryItem(name: "ts", value: ts), URLQueryItem(name: "hash", value: hash)]
+        requestDto.params?.forEach{(key, value) in
+            queryItemsArray.append(URLQueryItem(name: key, value: "\(value)"))
+        }
+        urlComp?.queryItems = queryItemsArray
+        let urlRequest = (urlComp?.url)!
         
         return URLSession.shared
             .dataTaskPublisher(for: urlRequest)

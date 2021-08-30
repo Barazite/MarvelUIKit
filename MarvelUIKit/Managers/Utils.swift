@@ -24,7 +24,6 @@ enum HTTPMethods: String {
 
 struct RequestDTO{
     var params: [String: Any]?
-    var arrayParams: [[String: Any]]?
     var method: HTTPMethods
     var endpoint: String
     
@@ -33,16 +32,13 @@ struct RequestDTO{
         self.method = method
         self.endpoint = endpoint
     }
-    
-    init(arrayParams: [[String: Any]]?, method: HTTPMethods, endpoint: String){
-        self.arrayParams = arrayParams
-        self.method = method
-        self.endpoint = endpoint
-    }
 }
 
 struct URLEndpoint {
-    //static let baseUrl = "https://ergast.com/api/f1/"
+    static let baseUrl = "https://gateway.marvel.com/v1/public/"
+    static let charactersUrl = "characters"
 }
 
-
+struct Limit{
+    static let limitCharacters = 30
+}

@@ -82,3 +82,5 @@ fastlane/test_output
 iOSInjectionProject/
 
 MarvelUIKit/Managers/ApiKeys.swift
+
+.DS_Store
