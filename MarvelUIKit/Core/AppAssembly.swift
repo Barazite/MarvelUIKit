@@ -18,7 +18,7 @@ class AppAssembly: AppAssemblyProtocol{
     
     internal func setPrincipalViewController(in window: UIWindow){
         //self.customUI()
-        actualViewController = ComicsListAssembly.viewController()
+        actualViewController = CreatorsAssembly.viewController()
         window.rootViewController = actualViewController
         window.makeKeyAndVisible()
     }

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreatorsViewController" customModule="MarvelUIKit" customModuleProvider="target">
+            <connections>
+                <outlet property="myCollectionView" destination="5GW-2B-exY" id="Hg2-qI-vxE"/>
+                <outlet property="myWebView" destination="xTw-UY-b2X" id="8oN-xg-PS8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5GW-2B-exY">
+                    <rect key="frame" x="0.0" y="44" width="375" height="150"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="GJQ-Lx-Lu3"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZiD-bf-jzw">
+                        <size key="itemSize" width="150" height="150"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pca-Ct-Ahj">
+                    <rect key="frame" x="0.0" y="194" width="375" height="584"/>
+                    <subviews>
+                        <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTw-UY-b2X">
+                            <rect key="frame" x="8" y="8" width="359" height="568"/>
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <wkWebViewConfiguration key="configuration">
+                                <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                <wkPreferences key="preferences"/>
+                            </wkWebViewConfiguration>
+                        </wkWebView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="xTw-UY-b2X" firstAttribute="leading" secondItem="Pca-Ct-Ahj" secondAttribute="leadingMargin" id="G16-Qq-Kkk"/>
+                        <constraint firstItem="xTw-UY-b2X" firstAttribute="top" secondItem="Pca-Ct-Ahj" secondAttribute="topMargin" id="UDW-c9-gyH"/>
+                        <constraint firstAttribute="bottomMargin" secondItem="xTw-UY-b2X" secondAttribute="bottom" id="UfN-U1-u6s"/>
+                        <constraint firstAttribute="trailingMargin" secondItem="xTw-UY-b2X" secondAttribute="trailing" id="sPR-4z-lHV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="5GW-2B-exY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="6vI-fZ-YAK"/>
+                <constraint firstItem="Pca-Ct-Ahj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="90P-Mx-fA2"/>
+                <constraint firstItem="Pca-Ct-Ahj" firstAttribute="top" secondItem="5GW-2B-exY" secondAttribute="bottom" id="S1D-ii-qoA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Pca-Ct-Ahj" secondAttribute="trailing" id="aJr-is-q4n"/>
+                <constraint firstItem="5GW-2B-exY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gh2-mx-tDj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Pca-Ct-Ahj" secondAttribute="bottom" id="ugB-7H-BSm"/>
+                <constraint firstItem="5GW-2B-exY" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="xYx-6J-VGp"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="131.52709359605913"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

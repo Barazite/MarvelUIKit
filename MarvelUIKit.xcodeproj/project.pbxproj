@@ -16,6 +16,8 @@
 		202B9B8C26D5829200E0514E /* CharactersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202B9B8B26D5829200E0514E /* CharactersModel.swift */; };
 		202B9B9026D588CC00E0514E /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202B9B8E26D588CC00E0514E /* CharacterTableViewCell.swift */; };
 		202B9B9126D588CC00E0514E /* CharacterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 202B9B8F26D588CC00E0514E /* CharacterTableViewCell.xib */; };
+		207F0E8B26DE747900933420 /* CreatorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207F0E8926DE747900933420 /* CreatorCollectionViewCell.swift */; };
+		207F0E8C26DE747900933420 /* CreatorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 207F0E8A26DE747900933420 /* CreatorCollectionViewCell.xib */; };
 		207F6FEA26DD2051005085FE /* ComicsServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207F6FE926DD2051005085FE /* ComicsServerModel.swift */; };
 		207F6FF226DD2277005085FE /* ComicsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207F6FEC26DD2277005085FE /* ComicsListRouter.swift */; };
 		207F6FF326DD2277005085FE /* ComicsListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207F6FED26DD2277005085FE /* ComicsListProvider.swift */; };
@@ -27,6 +29,15 @@
 		207F6FFF26DD2664005085FE /* ComicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207F6FFE26DD2664005085FE /* ComicModel.swift */; };
 		207F700226DD31B3005085FE /* ComicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207F700026DD31B3005085FE /* ComicCollectionViewCell.swift */; };
 		207F700326DD31B3005085FE /* ComicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 207F700126DD31B3005085FE /* ComicCollectionViewCell.xib */; };
+		20807F1326DD5C0900128FFB /* CreatorsServerlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20807F1226DD5C0900128FFB /* CreatorsServerlModel.swift */; };
+		20807F1B26DD5F6B00128FFB /* CreatorsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20807F1526DD5F6B00128FFB /* CreatorsRouter.swift */; };
+		20807F1C26DD5F6B00128FFB /* CreatorsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20807F1626DD5F6B00128FFB /* CreatorsProvider.swift */; };
+		20807F1D26DD5F6B00128FFB /* CreatorsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20807F1726DD5F6B00128FFB /* CreatorsPresenter.swift */; };
+		20807F1E26DD5F6B00128FFB /* CreatorsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20807F1826DD5F6B00128FFB /* CreatorsAssembly.swift */; };
+		20807F1F26DD5F6B00128FFB /* CreatorsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20807F1926DD5F6B00128FFB /* CreatorsInteractor.swift */; };
+		20807F2526DD5FD200128FFB /* CreatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20807F2326DD5FD200128FFB /* CreatorsViewController.swift */; };
+		20807F2626DD5FD200128FFB /* CreatorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20807F2426DD5FD200128FFB /* CreatorsViewController.xib */; };
+		20807F2826DD631600128FFB /* CreatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20807F2726DD631600128FFB /* CreatorModel.swift */; };
 		2081A93726D94E2800E5DAF8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2081A93626D94E2800E5DAF8 /* Kingfisher */; };
 		2091E50826D7E97D00B8DC28 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2091E50726D7E97D00B8DC28 /* StringExtension.swift */; };
 		2091E51726D8082900B8DC28 /* CharactersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2091E51526D8082900B8DC28 /* CharactersListViewController.swift */; };
@@ -53,6 +64,8 @@
 		202B9B8B26D5829200E0514E /* CharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModel.swift; sourceTree = "<group>"; };
 		202B9B8E26D588CC00E0514E /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		202B9B8F26D588CC00E0514E /* CharacterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterTableViewCell.xib; sourceTree = "<group>"; };
+		207F0E8926DE747900933420 /* CreatorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorCollectionViewCell.swift; sourceTree = "<group>"; };
+		207F0E8A26DE747900933420 /* CreatorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreatorCollectionViewCell.xib; sourceTree = "<group>"; };
 		207F6FE926DD2051005085FE /* ComicsServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsServerModel.swift; sourceTree = "<group>"; };
 		207F6FEC26DD2277005085FE /* ComicsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsListRouter.swift; sourceTree = "<group>"; };
 		207F6FED26DD2277005085FE /* ComicsListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsListProvider.swift; sourceTree = "<group>"; };
@@ -64,6 +77,15 @@
 		207F6FFE26DD2664005085FE /* ComicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicModel.swift; sourceTree = "<group>"; };
 		207F700026DD31B3005085FE /* ComicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicCollectionViewCell.swift; sourceTree = "<group>"; };
 		207F700126DD31B3005085FE /* ComicCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicCollectionViewCell.xib; sourceTree = "<group>"; };
+		20807F1226DD5C0900128FFB /* CreatorsServerlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorsServerlModel.swift; sourceTree = "<group>"; };
+		20807F1526DD5F6B00128FFB /* CreatorsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorsRouter.swift; sourceTree = "<group>"; };
+		20807F1626DD5F6B00128FFB /* CreatorsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorsProvider.swift; sourceTree = "<group>"; };
+		20807F1726DD5F6B00128FFB /* CreatorsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorsPresenter.swift; sourceTree = "<group>"; };
+		20807F1826DD5F6B00128FFB /* CreatorsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorsAssembly.swift; sourceTree = "<group>"; };
+		20807F1926DD5F6B00128FFB /* CreatorsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorsInteractor.swift; sourceTree = "<group>"; };
+		20807F2326DD5FD200128FFB /* CreatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorsViewController.swift; sourceTree = "<group>"; };
+		20807F2426DD5FD200128FFB /* CreatorsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreatorsViewController.xib; sourceTree = "<group>"; };
+		20807F2726DD631600128FFB /* CreatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorModel.swift; sourceTree = "<group>"; };
 		2091E50726D7E97D00B8DC28 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		2091E51526D8082900B8DC28 /* CharactersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewController.swift; sourceTree = "<group>"; };
 		2091E51626D8082900B8DC28 /* CharactersListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersListViewController.xib; sourceTree = "<group>"; };
@@ -138,6 +160,7 @@
 			children = (
 				202B9B8926D57A9700E0514E /* CharactersServelModel.swift */,
 				207F6FE926DD2051005085FE /* ComicsServerModel.swift */,
+				20807F1226DD5C0900128FFB /* CreatorsServerlModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +221,47 @@
 				207F6FFE26DD2664005085FE /* ComicModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		20807F1126DD593400128FFB /* Creators */ = {
+			isa = PBXGroup;
+			children = (
+				20807F2026DD5F7100128FFB /* Infraestructure */,
+				20807F1526DD5F6B00128FFB /* CreatorsRouter.swift */,
+				20807F1726DD5F6B00128FFB /* CreatorsPresenter.swift */,
+				20807F1926DD5F6B00128FFB /* CreatorsInteractor.swift */,
+				20807F2326DD5FD200128FFB /* CreatorsViewController.swift */,
+				20807F2426DD5FD200128FFB /* CreatorsViewController.xib */,
+			);
+			path = Creators;
+			sourceTree = "<group>";
+		};
+		20807F2026DD5F7100128FFB /* Infraestructure */ = {
+			isa = PBXGroup;
+			children = (
+				20807F1626DD5F6B00128FFB /* CreatorsProvider.swift */,
+				20807F1826DD5F6B00128FFB /* CreatorsAssembly.swift */,
+				20807F2226DD5F8400128FFB /* Cell */,
+				20807F2126DD5F7E00128FFB /* Model */,
+			);
+			path = Infraestructure;
+			sourceTree = "<group>";
+		};
+		20807F2126DD5F7E00128FFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20807F2726DD631600128FFB /* CreatorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20807F2226DD5F8400128FFB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				207F0E8926DE747900933420 /* CreatorCollectionViewCell.swift */,
+				207F0E8A26DE747900933420 /* CreatorCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		20BE044226D42DBB0025B163 = {
@@ -272,6 +336,7 @@
 		20BE046626D42F2A0025B163 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				20807F1126DD593400128FFB /* Creators */,
 				207F6FE726DD1EB1005085FE /* Comics */,
 				202B9B7426D5765000E0514E /* Characters */,
 				20BE047726D431930025B163 /* Home */,
@@ -349,10 +414,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20807F2626DD5FD200128FFB /* CreatorsViewController.xib in Resources */,
 				2091E51826D8082900B8DC28 /* CharactersListViewController.xib in Resources */,
 				20BE045B26D42DBC0025B163 /* LaunchScreen.storyboard in Resources */,
 				207F6FFD26DD22D4005085FE /* ComicsListViewController.xib in Resources */,
 				20BE045826D42DBC0025B163 /* Assets.xcassets in Resources */,
+				207F0E8C26DE747900933420 /* CreatorCollectionViewCell.xib in Resources */,
 				207F700326DD31B3005085FE /* ComicCollectionViewCell.xib in Resources */,
 				202B9B9126D588CC00E0514E /* CharacterTableViewCell.xib in Resources */,
 			);
@@ -365,7 +432,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20807F1326DD5C0900128FFB /* CreatorsServerlModel.swift in Sources */,
 				202B9B8026D5783800E0514E /* CharactersListAssembly.swift in Sources */,
+				20807F1C26DD5F6B00128FFB /* CreatorsProvider.swift in Sources */,
 				207F6FFC26DD22D4005085FE /* ComicsListViewController.swift in Sources */,
 				20BE046F26D430070025B163 /* RequestManager.swift in Sources */,
 				202B9B8C26D5829200E0514E /* CharactersModel.swift in Sources */,
@@ -375,10 +444,13 @@
 				202B9B7E26D5783800E0514E /* CharactersListProvider.swift in Sources */,
 				202B9B7F26D5783800E0514E /* CharactersListPresenter.swift in Sources */,
 				20BE047226D430070025B163 /* NetworkError.swift in Sources */,
+				20807F1D26DD5F6B00128FFB /* CreatorsPresenter.swift in Sources */,
 				207F6FFF26DD2664005085FE /* ComicModel.swift in Sources */,
 				20BE046826D42F9B0025B163 /* AppAssembly.swift in Sources */,
 				207F6FF626DD2277005085FE /* ComicsListInteractor.swift in Sources */,
 				207F6FF326DD2277005085FE /* ComicsListProvider.swift in Sources */,
+				207F0E8B26DE747900933420 /* CreatorCollectionViewCell.swift in Sources */,
+				20807F1E26DD5F6B00128FFB /* CreatorsAssembly.swift in Sources */,
 				202B9B8A26D57A9700E0514E /* CharactersServelModel.swift in Sources */,
 				20BE044F26D42DBB0025B163 /* AppDelegate.swift in Sources */,
 				207F6FF526DD2277005085FE /* ComicsListAssembly.swift in Sources */,
@@ -386,12 +458,16 @@
 				20BE047626D4305D0025B163 /* ApiKeys.swift in Sources */,
 				20BE047126D430070025B163 /* Utils.swift in Sources */,
 				20BE047426D430100025B163 /* ReuseIdentifier.swift in Sources */,
+				20807F2826DD631600128FFB /* CreatorModel.swift in Sources */,
+				20807F2526DD5FD200128FFB /* CreatorsViewController.swift in Sources */,
+				20807F1B26DD5F6B00128FFB /* CreatorsRouter.swift in Sources */,
 				207F6FF426DD2277005085FE /* ComicsListPresenter.swift in Sources */,
 				2091E50826D7E97D00B8DC28 /* StringExtension.swift in Sources */,
 				202B9B7D26D5783800E0514E /* CharactersListRouter.swift in Sources */,
 				207F6FEA26DD2051005085FE /* ComicsServerModel.swift in Sources */,
 				20BE046A26D42FF60025B163 /* BaseVIPER.swift in Sources */,
 				2091E51726D8082900B8DC28 /* CharactersListViewController.swift in Sources */,
+				20807F1F26DD5F6B00128FFB /* CreatorsInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,32 +1,31 @@
-// ComicsListPresenter.swift
+// CreatorsPresenter.swift
 // Architecture VIPER
 //
 
 import Foundation
 
-protocol ComicsListPresenterProtocol {
-    func fetchData()
-    func showDetailComic(data: Comic)
+protocol CreatorsPresenterProtocol {
+   func fetchData()
     func getNumberOfRowInSections() -> Int
-    func getInformationObject(indexPath: Int) -> Comic?
+    func getInformationObject(indexPath: Int) -> Creator?
 }
 
-class ComicsListPresenterImpl: BasePresenter<ComicsListViewControllerProtocol, ComicsListRouterProtocol, ComicsListInteractorProtocol> {
+class CreatorsPresenterImpl: BasePresenter<CreatorsViewControllerProtocol, CreatorsRouterProtocol, CreatorsInteractorProtocol> {
     
-    var data: [Comic] = []
+    var data: [Creator] = []
     var finalList = false
     var offset = 0
     var total = 0
 }
 
 
-extension ComicsListPresenterImpl: ComicsListPresenterProtocol {
+extension CreatorsPresenterImpl: CreatorsPresenterProtocol {
     func fetchData(){
         if !self.finalList{
             self.interactor?.fetchDataInteractor(offset: self.offset, success: { [weak self] resultArray in
                 guard self != nil else { return }
                 if let resultArraydDes = resultArray?.results{
-                    self?.data.append(contentsOf: resultArraydDes.map{Comic(businessModel: $0)})
+                    self?.data.append(contentsOf: resultArraydDes.map{Creator(businessModel: $0)})
                     self?.offset += (resultArray?.limit)!
                     self?.viewController?.reloadData()
                     if self?.data.count == self?.total{
@@ -39,15 +38,12 @@ extension ComicsListPresenterImpl: ComicsListPresenterProtocol {
         }
     }
     
-    func showDetailComic(data: Comic){
-        
-    }
-    
     func getNumberOfRowInSections() -> Int{
         self.data.count
     }
     
-    func getInformationObject(indexPath: Int) -> Comic?{
+    func getInformationObject(indexPath: Int) -> Creator?{
         self.data[indexPath]
     }
+    
 }

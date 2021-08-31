@@ -17,7 +17,7 @@ class ComicsListViewController: BaseViewController<ComicsListPresenterProtocol>,
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupTableView()
+        self.setupCollectionView()
         self.presenter?.fetchData()
     }
     
@@ -25,7 +25,7 @@ class ComicsListViewController: BaseViewController<ComicsListPresenterProtocol>,
         super.viewWillAppear(animated)
     }
     
-    private func setupTableView() {
+    private func setupCollectionView() {
         self.myCollectionView.delegate = self
         self.myCollectionView.dataSource = self
         self.myCollectionView.register(UINib(nibName: ComicCollectionViewCell.defaultReuseIdentifier, bundle: nil), forCellWithReuseIdentifier: ComicCollectionViewCell.defaultReuseIdentifier)
