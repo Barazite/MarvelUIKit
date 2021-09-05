@@ -15,6 +15,6 @@ struct Character{
     init(businessModel: CharacterResult){
         self.id = businessModel.id
         self.name = businessModel.name
-        self.thumbnail = "\(businessModel.thumbnail?.path?.replacingOccurrences(of: "http", with: "https") ?? "")/standard_xlarge." + "\(businessModel.thumbnail?.thumbnailExtension ?? "")"
+        self.thumbnail = "\(businessModel.thumbnail?.path?.replacingOccurrences(of: "http", with: "https") ?? "")/standard_xlarge.\(businessModel.thumbnail?.thumbnailExtension ?? "")"
     }
 }

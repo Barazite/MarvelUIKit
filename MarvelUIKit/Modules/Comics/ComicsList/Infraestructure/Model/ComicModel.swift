@@ -15,6 +15,6 @@ struct Comic{
     init(businessModel: ComicResult){
         self.id = businessModel.id
         self.title = businessModel.title
-        self.thumbnail = "\(businessModel.thumbnail?.path?.replacingOccurrences(of: "http", with: "https") ?? "")/standard_xlarge." + "\(businessModel.thumbnail?.thumbnailExtension ?? "")"
+        self.thumbnail = "\(businessModel.thumbnail?.path?.replacingOccurrences(of: "http", with: "https") ?? "")/standard_xlarge.\(businessModel.thumbnail?.thumbnailExtension ?? "")"
     }
 }

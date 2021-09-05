@@ -16,6 +16,9 @@
 		202B9B8C26D5829200E0514E /* CharactersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202B9B8B26D5829200E0514E /* CharactersModel.swift */; };
 		202B9B9026D588CC00E0514E /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202B9B8E26D588CC00E0514E /* CharacterTableViewCell.swift */; };
 		202B9B9126D588CC00E0514E /* CharacterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 202B9B8F26D588CC00E0514E /* CharacterTableViewCell.xib */; };
+		207D79C826DEB612009C0AFB /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D79C626DEB612009C0AFB /* HomeTabBarController.swift */; };
+		207D79C926DEB612009C0AFB /* HomeTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 207D79C726DEB612009C0AFB /* HomeTabBarController.xib */; };
+		207D79CB26DEB64D009C0AFB /* HomeTabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D79CA26DEB64D009C0AFB /* HomeTabBarAssembly.swift */; };
 		207F0E8B26DE747900933420 /* CreatorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207F0E8926DE747900933420 /* CreatorCollectionViewCell.swift */; };
 		207F0E8C26DE747900933420 /* CreatorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 207F0E8A26DE747900933420 /* CreatorCollectionViewCell.xib */; };
 		207F6FEA26DD2051005085FE /* ComicsServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207F6FE926DD2051005085FE /* ComicsServerModel.swift */; };
@@ -64,6 +67,9 @@
 		202B9B8B26D5829200E0514E /* CharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModel.swift; sourceTree = "<group>"; };
 		202B9B8E26D588CC00E0514E /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		202B9B8F26D588CC00E0514E /* CharacterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterTableViewCell.xib; sourceTree = "<group>"; };
+		207D79C626DEB612009C0AFB /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		207D79C726DEB612009C0AFB /* HomeTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTabBarController.xib; sourceTree = "<group>"; };
+		207D79CA26DEB64D009C0AFB /* HomeTabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarAssembly.swift; sourceTree = "<group>"; };
 		207F0E8926DE747900933420 /* CreatorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorCollectionViewCell.swift; sourceTree = "<group>"; };
 		207F0E8A26DE747900933420 /* CreatorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreatorCollectionViewCell.xib; sourceTree = "<group>"; };
 		207F6FE926DD2051005085FE /* ComicsServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsServerModel.swift; sourceTree = "<group>"; };
@@ -347,6 +353,9 @@
 		20BE047726D431930025B163 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				207D79CA26DEB64D009C0AFB /* HomeTabBarAssembly.swift */,
+				207D79C626DEB612009C0AFB /* HomeTabBarController.swift */,
+				207D79C726DEB612009C0AFB /* HomeTabBarController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -414,6 +423,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				207D79C926DEB612009C0AFB /* HomeTabBarController.xib in Resources */,
 				20807F2626DD5FD200128FFB /* CreatorsViewController.xib in Resources */,
 				2091E51826D8082900B8DC28 /* CharactersListViewController.xib in Resources */,
 				20BE045B26D42DBC0025B163 /* LaunchScreen.storyboard in Resources */,
@@ -436,6 +446,7 @@
 				202B9B8026D5783800E0514E /* CharactersListAssembly.swift in Sources */,
 				20807F1C26DD5F6B00128FFB /* CreatorsProvider.swift in Sources */,
 				207F6FFC26DD22D4005085FE /* ComicsListViewController.swift in Sources */,
+				207D79CB26DEB64D009C0AFB /* HomeTabBarAssembly.swift in Sources */,
 				20BE046F26D430070025B163 /* RequestManager.swift in Sources */,
 				202B9B8C26D5829200E0514E /* CharactersModel.swift in Sources */,
 				207F6FF226DD2277005085FE /* ComicsListRouter.swift in Sources */,
@@ -445,6 +456,7 @@
 				202B9B7F26D5783800E0514E /* CharactersListPresenter.swift in Sources */,
 				20BE047226D430070025B163 /* NetworkError.swift in Sources */,
 				20807F1D26DD5F6B00128FFB /* CreatorsPresenter.swift in Sources */,
+				207D79C826DEB612009C0AFB /* HomeTabBarController.swift in Sources */,
 				207F6FFF26DD2664005085FE /* ComicModel.swift in Sources */,
 				20BE046826D42F9B0025B163 /* AppAssembly.swift in Sources */,
 				207F6FF626DD2277005085FE /* ComicsListInteractor.swift in Sources */,

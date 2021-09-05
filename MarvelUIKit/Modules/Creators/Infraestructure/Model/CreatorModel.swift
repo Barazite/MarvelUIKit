@@ -16,7 +16,7 @@ struct Creator{
     init(businessModel: CreatorResult){
         self.id = businessModel.id
         self.name = businessModel.fullName
-        self.thumbnail = "\(businessModel.thumbnail?.path?.replacingOccurrences(of: "http", with: "https") ?? "")/standard_xlarge." + "\(businessModel.thumbnail?.thumbnailExtension ?? "")"
+        self.thumbnail = "\(businessModel.thumbnail?.path?.replacingOccurrences(of: "http", with: "https") ?? "")/standard_xlarge.\(businessModel.thumbnail?.thumbnailExtension ?? "")"
         self.url = URL(string: businessModel.urls?[0].url?.replacingOccurrences(of: "http", with: "https") ?? "https://marvel.com/")
     }
 }
