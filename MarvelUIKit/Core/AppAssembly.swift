@@ -24,14 +24,15 @@ class AppAssembly: AppAssemblyProtocol{
     }
         
     fileprivate func customUI(){
-//        let navBar = UINavigationBar.appearance()
+        let navBar = UINavigationBar.appearance()
         let tabBar = UITabBar.appearance()
         
         tabBar.barTintColor = .red
         tabBar.tintColor = .black
         tabBar.unselectedItemTintColor = .white
-//        navBar.barTintColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-//        navBar.barStyle = .black
-//        navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)]
+        
+        navBar.barTintColor = .red
+        navBar.tintColor = .black
+        navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(.red)]
     }
 }

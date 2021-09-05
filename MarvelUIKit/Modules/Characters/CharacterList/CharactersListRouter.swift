@@ -16,6 +16,7 @@ class CharactersListRouterImpl: BaseRouter< CharactersListPresenterProtocol> {
 
 extension CharactersListRouterImpl: CharactersListRouterProtocol {
     func showDetailCharacter(data: Character) {
-        print("Detail: " + data.name!)
+        let vc = CharactersDetailsAssembly.viewController(data: data)
+        self.show(vc)
     }
 }
