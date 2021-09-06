@@ -16,6 +16,7 @@ class ComicsListRouterImpl: BaseRouter< ComicsListPresenterProtocol> {
 
 extension ComicsListRouterImpl: ComicsListRouterProtocol {
     func showDetailComic(data: Comic) {
-        
+        let vc = ComicsDetailsAssembly.viewController(data: data)
+        self.present(vc, animated: true)
     }    
 }

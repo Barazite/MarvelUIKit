@@ -51,6 +51,12 @@
 		2091E50826D7E97D00B8DC28 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2091E50726D7E97D00B8DC28 /* StringExtension.swift */; };
 		2091E51726D8082900B8DC28 /* CharactersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2091E51526D8082900B8DC28 /* CharactersListViewController.swift */; };
 		2091E51826D8082900B8DC28 /* CharactersListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2091E51626D8082900B8DC28 /* CharactersListViewController.xib */; };
+		2092D58926E68FA00087DB5D /* ComicsDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092D58326E68FA00087DB5D /* ComicsDetailsRouter.swift */; };
+		2092D58B26E68FA00087DB5D /* ComicsDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092D58526E68FA00087DB5D /* ComicsDetailsPresenter.swift */; };
+		2092D58C26E68FA00087DB5D /* ComicsDetailsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092D58626E68FA00087DB5D /* ComicsDetailsAssembly.swift */; };
+		2092D58D26E68FA00087DB5D /* ComicsDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092D58726E68FA00087DB5D /* ComicsDetailsInteractor.swift */; };
+		2092D59126E693710087DB5D /* ComicsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2092D58F26E693710087DB5D /* ComicsDetailsViewController.swift */; };
+		2092D59226E693710087DB5D /* ComicsDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2092D59026E693710087DB5D /* ComicsDetailsViewController.xib */; };
 		20BE044F26D42DBB0025B163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BE044E26D42DBB0025B163 /* AppDelegate.swift */; };
 		20BE045826D42DBC0025B163 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BE045726D42DBC0025B163 /* Assets.xcassets */; };
 		20BE045B26D42DBC0025B163 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BE045926D42DBC0025B163 /* LaunchScreen.storyboard */; };
@@ -107,6 +113,12 @@
 		2091E50726D7E97D00B8DC28 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		2091E51526D8082900B8DC28 /* CharactersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewController.swift; sourceTree = "<group>"; };
 		2091E51626D8082900B8DC28 /* CharactersListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersListViewController.xib; sourceTree = "<group>"; };
+		2092D58326E68FA00087DB5D /* ComicsDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsDetailsRouter.swift; sourceTree = "<group>"; };
+		2092D58526E68FA00087DB5D /* ComicsDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsDetailsPresenter.swift; sourceTree = "<group>"; };
+		2092D58626E68FA00087DB5D /* ComicsDetailsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsDetailsAssembly.swift; sourceTree = "<group>"; };
+		2092D58726E68FA00087DB5D /* ComicsDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsDetailsInteractor.swift; sourceTree = "<group>"; };
+		2092D58F26E693710087DB5D /* ComicsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsDetailsViewController.swift; sourceTree = "<group>"; };
+		2092D59026E693710087DB5D /* ComicsDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicsDetailsViewController.xib; sourceTree = "<group>"; };
 		20BE044B26D42DBB0025B163 /* MarvelUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BE044E26D42DBB0025B163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20BE045726D42DBC0025B163 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -217,6 +229,7 @@
 		207F6FE726DD1EB1005085FE /* Comics */ = {
 			isa = PBXGroup;
 			children = (
+				2092D58126E68F7C0087DB5D /* ComicsDetails */,
 				207F6FE826DD1EBC005085FE /* ComicsList */,
 			);
 			path = Comics;
@@ -302,6 +315,27 @@
 				207F0E8A26DE747900933420 /* CreatorCollectionViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		2092D58126E68F7C0087DB5D /* ComicsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2092D58E26E68FC30087DB5D /* Infraestructure */,
+				2092D58326E68FA00087DB5D /* ComicsDetailsRouter.swift */,
+				2092D58526E68FA00087DB5D /* ComicsDetailsPresenter.swift */,
+				2092D58726E68FA00087DB5D /* ComicsDetailsInteractor.swift */,
+				2092D58F26E693710087DB5D /* ComicsDetailsViewController.swift */,
+				2092D59026E693710087DB5D /* ComicsDetailsViewController.xib */,
+			);
+			path = ComicsDetails;
+			sourceTree = "<group>";
+		};
+		2092D58E26E68FC30087DB5D /* Infraestructure */ = {
+			isa = PBXGroup;
+			children = (
+				2092D58626E68FA00087DB5D /* ComicsDetailsAssembly.swift */,
+			);
+			path = Infraestructure;
 			sourceTree = "<group>";
 		};
 		20BE044226D42DBB0025B163 = {
@@ -457,6 +491,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2092D59226E693710087DB5D /* ComicsDetailsViewController.xib in Resources */,
 				207D79C926DEB612009C0AFB /* HomeTabBarController.xib in Resources */,
 				20807F2626DD5FD200128FFB /* CreatorsViewController.xib in Resources */,
 				2091E51826D8082900B8DC28 /* CharactersListViewController.xib in Resources */,
@@ -479,11 +514,13 @@
 			files = (
 				20807F1326DD5C0900128FFB /* CreatorsServerlModel.swift in Sources */,
 				202B9B8026D5783800E0514E /* CharactersListAssembly.swift in Sources */,
+				2092D58926E68FA00087DB5D /* ComicsDetailsRouter.swift in Sources */,
 				20807F1C26DD5F6B00128FFB /* CreatorsProvider.swift in Sources */,
 				207F6FFC26DD22D4005085FE /* ComicsListViewController.swift in Sources */,
 				207D79CB26DEB64D009C0AFB /* HomeTabBarAssembly.swift in Sources */,
 				20BE046F26D430070025B163 /* RequestManager.swift in Sources */,
 				202B9B8C26D5829200E0514E /* CharactersModel.swift in Sources */,
+				2092D58B26E68FA00087DB5D /* ComicsDetailsPresenter.swift in Sources */,
 				207F6FF226DD2277005085FE /* ComicsListRouter.swift in Sources */,
 				207F700226DD31B3005085FE /* ComicCollectionViewCell.swift in Sources */,
 				2064B00F26E5204A00BC8E73 /* CharactersDetailsAssembly.swift in Sources */,
@@ -494,14 +531,17 @@
 				20807F1D26DD5F6B00128FFB /* CreatorsPresenter.swift in Sources */,
 				207D79C826DEB612009C0AFB /* HomeTabBarController.swift in Sources */,
 				207F6FFF26DD2664005085FE /* ComicModel.swift in Sources */,
+				2092D58D26E68FA00087DB5D /* ComicsDetailsInteractor.swift in Sources */,
 				20BE046826D42F9B0025B163 /* AppAssembly.swift in Sources */,
 				207F6FF626DD2277005085FE /* ComicsListInteractor.swift in Sources */,
 				207F6FF326DD2277005085FE /* ComicsListProvider.swift in Sources */,
 				207F0E8B26DE747900933420 /* CreatorCollectionViewCell.swift in Sources */,
 				20807F1E26DD5F6B00128FFB /* CreatorsAssembly.swift in Sources */,
+				2092D58C26E68FA00087DB5D /* ComicsDetailsAssembly.swift in Sources */,
 				2064B01026E5204A00BC8E73 /* CharactersDetailsInteractor.swift in Sources */,
 				2064B00E26E5204A00BC8E73 /* CharactersDetailsPresenter.swift in Sources */,
 				202B9B8A26D57A9700E0514E /* CharactersServelModel.swift in Sources */,
+				2092D59126E693710087DB5D /* ComicsDetailsViewController.swift in Sources */,
 				20BE044F26D42DBB0025B163 /* AppDelegate.swift in Sources */,
 				207F6FF526DD2277005085FE /* ComicsListAssembly.swift in Sources */,
 				202B9B9026D588CC00E0514E /* CharacterTableViewCell.swift in Sources */,

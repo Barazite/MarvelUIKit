@@ -40,7 +40,7 @@ extension ComicsListPresenterImpl: ComicsListPresenterProtocol {
     }
     
     func showDetailComic(data: Comic){
-        
+        self.router?.showDetailComic(data: data)
     }
     
     func getNumberOfRowInSections() -> Int{

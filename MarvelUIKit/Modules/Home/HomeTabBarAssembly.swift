@@ -13,9 +13,9 @@ final public class HomeTabBarAssembly {
     static func homeTabBarController() -> HomeTabBarController {
         let viewController = HomeTabBarController(nibName: HomeTabBarController.defaultReuseIdentifierViewController, bundle: nil)
         
-        let CharactersViewController = CharactersListAssembly.navigationController()
-        let ComicsViewController = ComicsListAssembly.navigationController()
-        let CreatorsViewController = CreatorsAssembly.navigationController()
+        let CharactersViewController = CharactersListAssembly.viewController()
+        let ComicsViewController = ComicsListAssembly.viewController()
+        let CreatorsViewController = CreatorsAssembly.viewController()
         
         let CharactersCustomTabBarItem = UITabBarItem(title: "Heros", image: UIImage(named: "hero"), selectedImage: UIImage(named: "hero"))
         let ComicsCustomTabBarItem = UITabBarItem(title: "Comics", image: UIImage(named: "comic"), selectedImage: UIImage(named: "comic"))
