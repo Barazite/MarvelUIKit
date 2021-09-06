@@ -80,3 +80,7 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+MarvelUIKit/Managers/ApiKeys.swift
+
+.DS_Store
